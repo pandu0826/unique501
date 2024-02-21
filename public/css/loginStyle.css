@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("player.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(192, 187, 187,0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateZ(20px); /* 3D effect */
+    margin-top: 100px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #3498db; /* Updated title color */
+    margin-bottom: 20px;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login-option {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #3498db;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-option.active {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #555;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    flex-grow: 1;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ccc; /* Add border */
+}
+
+.input-group input[type="submit"] {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.input-group input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-container a {
+    color: #333;
+    text-decoration: none;
+    font-size: smaller;
+    transition: color 0.3s;
+}
+
+.links-container a:hover {
+    color: #3498db;
+}
